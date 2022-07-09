@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fafafb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.uploader {
+  width: 402px;
+  height: auto;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  text-align: center;
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  cursor: default;
+}
+
+.uploader__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.035em;
+  color: #4f4f4f;
+}
+
+.uploader__subTitle {
+  font-size: 10px;
+  line-height: 15px;
+  color: #828282;
+}
+
+.drag-area {
+  background-color: #f6f8fb;
+  border: 1px dashed #97bef4;
+  border-radius: 12px;
+  width: 338px;
+  height: 218.9px;
+}
+.drag-area.active {
+  border: 1px dashed #1e4e91;
+}
+
+.drag-area img {
+  margin-top: 36px;
+}
+
+.drag-area p {
+  margin-top: 36px;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.035em;
+  color: #bdbdbd;
+}
+
+.uploaded__image {
+  width: 338px;
+  height: 218.9px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.imageurl {
+  background: #f6f8fb;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 6px;
+  width: 100%;
+  display: flex;
+}
+
+.imageurl input {
+  border: none;
+  font-size: 16px;
+  color: #4f4f4f;
+  background: none;
+  width: 71%;
+  padding-right: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.imageurl input:focus-visible {
+  outline: none;
+}
+
+.checkIcon {
+  width: 36px;
+}
+
+p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.035em;
+  color: #bdbdbd;
+  cursor: default;
+}
+
+button {
+  background: #2f80ed;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #0b5cc9;
+}
+
+.left {
+  align-self: flex-start;
+}
+
+footer {
+  position: absolute;
+  bottom: 5px;
+  font-family: "poppins";
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  color: #a9a9a9;
+}
+
+footer a {
+  text-decoration: none;
+  color: #a9a9a9;
+}
+
+@media screen and (max-width: 480px) {
+  .uploader {
+    width: 300px;
+  }
+  .drag-area,
+  .uploaded__image {
+    width: 238px;
+  }
+  .drag-area img {
+    width: 110px;
+  }
+  .imageurl input {
+    width: 59%;
+    font-size: 12px;
+  }
+  .imageurl {
+    padding: 3px;
+  }
+}
