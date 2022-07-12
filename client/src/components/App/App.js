@@ -31,10 +31,9 @@ function App() {
           />
         </Routes>
       </div>
-      <footer className={style.footer}>
-        <span className={style.footer_created}>created by</span>{" "}
-        <span className={style.footer_user}>Jonathan Ruiz</span> -{" "}
-        <span className={style.footer_page}>devChallenges.io</span>
+        <footer>
+        created by <a href="https://github.com/drissi1999/image">drissi999</a> -
+        devChallenges.io
       </footer>
     </>
   );
